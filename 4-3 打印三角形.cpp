@@ -4,12 +4,12 @@ using namespace std;
 int main(){
     //UTF-8
     int i;
-    SetConsoleOutputCP(65001);
+    SetConsoleOutputCP(65001);//告诉控制台此文件为UTF—8编码
     cout<<" 输入n： ";
     cin>>i;
     for (int n = 1;n <= i; n++){//控制每行
-        for(int space = i - n;space != 0; space--) cout<<" ";
-        for(int sign = 2*n - 1;sign != 0; sign--) cout<<"*";
+        for(int space = i - n;space != 0; space--) cout<<" ";//空格数： N = i - n 
+        for(int sign = 2*n - 1;sign != 0; sign--) cout<<"*";//星号数： 2*n -1
         cout<<endl;//换行符
     }
     return 0;
